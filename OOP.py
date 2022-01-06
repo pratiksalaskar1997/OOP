@@ -13,3 +13,20 @@ print(SampleInfo.__doc__)
 print(help(SampleInfo))
 print(dir(SampleInfo))
 
+class test:
+    def sample(self, name = 'Guest'):
+        print('hello',name,'good morning')
+t = test()
+t.sample('pratik')
+t.sample()
+
+name = 'pratik'
+age = 24
+def sample():
+    global name
+    global age
+#def display():
+    #print(name, age)
+sample()
+display()
+'''
