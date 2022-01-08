@@ -1,4 +1,4 @@
-'''
+
 SYNTAX OF A CLASS:
 class SampleInfo():
     this is a sample class <== # docstring
@@ -29,4 +29,4 @@ def sample():
     #print(name, age)
 sample()
 display()
-'''
+
