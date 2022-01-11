@@ -1,5 +1,5 @@
 
-SYNTAX OF A CLASS:
+#SYNTAX OF A CLASS:
 class SampleInfo():
     this is a sample class <== # docstring
     x = 20
