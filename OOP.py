@@ -20,13 +20,4 @@ t = test()
 t.sample('pratik')
 t.sample()
 
-name = 'pratik'
-age = 24
-def sample():
-    global name
-    global age
-#def display():
-    #print(name, age)
-sample()
-display()
 
