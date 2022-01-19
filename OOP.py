@@ -143,3 +143,24 @@ class student:
 s = student('pratik',24)
 s.display()
 =======================================================================================================
+# using for loop:(name and marks)
+
+class student:
+    def __init__(self,name,mark):
+        self.name = name
+        self.mark = mark
+
+
+    def display(self):
+        print('hello {} your age is {}'.format(self.name,self.mark))
+    def grade(self):
+        if int(self.mark) >= 75:
+            print(self.name, 'you got distinction')
+no = int(input('enter how many student:'))
+for i in range(no):
+    name = input('enter the name: ')
+    mark = input('enter the marks: ')
+s = student(name, mark)
+s.display()
+s.grade()
+========================================================================================
