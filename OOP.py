@@ -61,3 +61,73 @@ c = Circle(0,0,40)
 c.area()
 c.perimeter()
 c.testbelongs()
+======================================================================================================================
+class computation:
+    def __init__(self):
+        pass
+
+    def facto(self,x):
+            f = 1
+            for i in range(x):
+                f *= (x-i)
+            print(f)
+    def Sum(self,n):
+        sum = 0
+        for i in range(n+1):
+            sum+=i
+        print(sum)
+    def testPrime(self,a):
+        if (all(a%y!=0 for y in range(2,a))) == True:
+            return True
+            #print('prime')
+
+        else:
+            return False
+            #print('not prime')
+    def testPrimes(self,n1,n2):
+        if self.testPrime(n1) == self.testPrime(n2):
+            print('co-prime')
+        #if (all(n1 % y!=0 for y in range(2,n1))) and (all(n2 % y!=0 for y in range(2,n2))) == True:
+            #print('co-prime')
+        else:
+            print('not co-prime')
+    def tableMult(self,b):
+
+        for i in range(1,11):
+            print(b*i)
+        #print(x1)
+
+    def alltableMult(self, d):
+
+        for i in range(1, d + 1):
+            print('table of:',i)
+            for j in range(1, 11):
+                print((i * j))
+
+
+    def listdiv(self,n4):
+        x3 = []
+        for i in range(1, n4):
+            if (n4 % i) == 0:
+                x3.append(i)
+        print(x3)
+    def listDivPrim(self,n5):
+        x4 = []
+        i = [u for u in range(2, n5) if all(u % y != 0 for y in range(2, u))]
+        #print(i)
+        for j in i:
+            if (n5 % j) == 0:
+                x4.append(j)
+        print(x4)
+
+
+c = computation()
+c.facto(5)
+c.Sum(5)
+c.testPrime(2)
+c.testPrimes(3, 4)
+c.tableMult(2)
+c.alltableMult(9)
+c.listdiv(10)
+c.listDivPrim(10)
+======================================================================================================
