@@ -131,3 +131,15 @@ c.alltableMult(9)
 c.listdiv(10)
 c.listDivPrim(10)
 ======================================================================================================
+# instance method:
+
+class student:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def display(self):
+        # dot format method
+        print('hello {} your age is {}'.format(self.name,self.age))
+s = student('pratik',24)
+s.display()
+=======================================================================================================
